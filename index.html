@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070b">
+  <meta name="description" content="Capital Network — a community-focused British FiveM roleplay server.">
+  <meta property="og:title" content="Capital Network">
+  <meta property="og:description" content="British FiveM roleplay, built around community, quality and progression.">
+  <meta property="og:type" content="website">
+  <title>Capital Network — British FiveM Roleplay</title>
+  <link rel="icon" href="logos/cnclear.gif">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Capital Network home">
+        <img src="logos/cnclear.gif" alt="Capital Network logo">
+        <span class="brand-copy"><strong>Capital</strong><small>Network</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#server">Server</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a data-config-link="rules" target="_blank" rel="noreferrer">Rules</a>
+        <a class="nav-discord" data-config-link="discord" target="_blank" rel="noreferrer">Discord</a>
+        <a class="nav-play" data-config-link="connect">Play now <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+
+      <div class="shell hero-layout">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="live-dot"></span> British FiveM Roleplay</div>
+          <h1>Your story.<br><span>Your city.</span></h1>
+          <p class="hero-lead">Capital Network is a modern UK-based roleplay community built for memorable characters, serious scenes, progression and a city that keeps moving.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" data-config-link="connect">Connect to server <span>↗</span></a>
+            <a class="button button-secondary" data-config-link="discord" target="_blank" rel="noreferrer">Join Discord</a>
+          </div>
+
+          <div class="connect-card" id="connectCard">
+            <div>
+              <span class="connect-label">Direct connect</span>
+              <strong id="connectCode">cfx.re/join/v9myj5</strong>
+            </div>
+            <button class="copy-button" id="copyConnect" type="button" aria-label="Copy direct connect code">Copy</button>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="logo-stage">
+            <div class="stage-ring stage-ring-one"></div>
+            <div class="stage-ring stage-ring-two"></div>
+            <div class="stage-card">
+              <div class="stage-status">
+                <span id="serverDot" class="status-dot"></span>
+                <span id="serverStatus">Checking server</span>
+              </div>
+              <img src="logos/cnclear.gif" alt="Capital Network crest">
+              <div class="stage-meta">
+                <div><small>Region</small><strong>United Kingdom</strong></div>
+                <div><small>Players</small><strong id="playerCount">— / —</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell hero-strip reveal reveal-delay-2">
+        <div><span>01</span><strong>Community first</strong><small>Friendly, active and built to grow</small></div>
+        <div><span>02</span><strong>UK roleplay</strong><small>British-inspired jobs and services</small></div>
+        <div><span>03</span><strong>Ongoing development</strong><small>Fresh systems, fixes and improvements</small></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="server">
+      <div class="shell">
+        <div class="section-heading reveal">
+          <div>
+            <p class="kicker">Get started</p>
+            <h2>Enter the city in minutes.</h2>
+          </div>
+          <p>Everything you need to join Capital Network, find your place and get support without digging through endless channels.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card info-card-featured reveal">
+            <div class="card-index">01</div>
+            <div class="card-icon">↗</div>
+            <h3>Connect</h3>
+            <p>Launch FiveM and search <strong>Capital Network</strong>, or use our direct connect link.</p>
+            <a class="text-link" data-config-link="connect">Join the server <span>→</span></a>
+          </article>
+
+          <article class="info-card reveal reveal-delay">
+            <div class="card-index">02</div>
+            <div class="card-icon">◇</div>
+            <h3>Whitelisted careers</h3>
+            <p>Build a career across policing, healthcare, motors and tuning with structured progression.</p>
+            <a class="text-link" data-config-link="companies" target="_blank" rel="noreferrer">Company channels <span>→</span></a>
+          </article>
+
+          <article class="info-card reveal reveal-delay-2">
+            <div class="card-index">03</div>
+            <div class="card-icon">?</div>
+            <h3>Support</h3>
+            <p>Need help? Open a ticket through our Discord and the team can point you in the right direction.</p>
+            <a class="text-link" data-config-link="support" target="_blank" rel="noreferrer">Open support <span>→</span></a>
+          </article>
+        </div>
+
+        <div class="feature-panel reveal">
+          <div class="feature-intro">
+            <p class="kicker">Why Capital?</p>
+            <h3>Roleplay with room to build something.</h3>
+            <p>Whether you want to run a business, serve the city, build a criminal story or simply meet people, the server is designed around long-term character progression.</p>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item"><span>01</span><div><strong>Character progression</strong><small>Create stories that develop over time.</small></div></div>
+            <div class="feature-item"><span>02</span><div><strong>Active staff support</strong><small>A team focused on keeping scenes fair and enjoyable.</small></div></div>
+            <div class="feature-item"><span>03</span><div><strong>Custom server experience</strong><small>Systems and content shaped around the community.</small></div></div>
+            <div class="feature-item"><span>04</span><div><strong>Built to evolve</strong><small>Continuous improvements instead of a static city.</small></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="shell about-layout">
+        <div class="about-media reveal">
+          <div class="image-frame">
+            <img src="images/about_01.png" alt="A Capital Network roleplay scene">
+          </div>
+          <div class="media-badge"><span>EST.</span><strong>2024</strong></div>
+        </div>
+
+        <div class="about-copy reveal reveal-delay">
+          <p class="kicker">About the network</p>
+          <h2>More than a server. A place to make your mark.</h2>
+          <p>Capital Network was established in July 2024 with one goal: deliver a polished, immersive roleplay experience backed by a growing community and a team that genuinely cares about the city.</p>
+          <p>Since launch, the server has continued to evolve through community feedback, new systems and ongoing development. The focus remains simple — stable gameplay, enjoyable roleplay and enough freedom for every character to build their own path.</p>
+
+          <div class="about-points">
+            <div><strong>UK</strong><span>Based community</span></div>
+            <div><strong>2024</strong><span>Established</span></div>
+            <div><strong>24/7</strong><span>Community access</span></div>
+          </div>
+
+          <a class="button button-dark" href="#team">Meet the team <span>↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section team-section" id="team">
+      <div class="shell">
+        <div class="section-heading light reveal">
+          <div>
+            <p class="kicker">The people behind it</p>
+            <h2>Meet the team.</h2>
+          </div>
+          <p>Capital Network is supported by a hands-on ownership, development and staff team focused on keeping the city moving.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-image"><img src="logos/RepV9.gif" alt="RepV9 avatar"></div>
+            <div class="team-role">Creator · Developer</div>
+            <h3>RepV9</h3>
+            <p>Works across the server, development and promotion while helping shape the direction of Capital Network.</p>
+            <a data-config-link="discord" target="_blank" rel="noreferrer">Discord <span>↗</span></a>
+          </article>
+
+          <article class="team-card reveal reveal-delay">
+            <div class="team-image"><img src="logos/Dec.gif" alt="Dec avatar"></div>
+            <div class="team-role">Creator · Developer</div>
+            <h3>Dec</h3>
+            <p>Helps lead the project, maintain the server and push improvements across the player experience.</p>
+            <a data-config-link="discord" target="_blank" rel="noreferrer">Discord <span>↗</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="shell cta-panel reveal">
+        <div class="cta-logo"><img src="logos/cnclear.gif" alt=""></div>
+        <div class="cta-copy">
+          <p class="kicker">Ready when you are</p>
+          <h2>Start your Capital Network story.</h2>
+          <p>Join the Discord, read the rules, create your character and step into the city.</p>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-primary" data-config-link="connect">Play Capital <span>↗</span></a>
+          <a class="button button-secondary-light" data-config-link="discord" target="_blank" rel="noreferrer">Join Discord</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-layout">
+      <div class="footer-brand">
+        <img src="logos/cnclear.gif" alt="Capital Network logo">
+        <div><strong>Capital Network</strong><span>British FiveM Roleplay</span></div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#server">Server</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a data-config-link="rules" target="_blank" rel="noreferrer">Rules</a>
+        <a data-config-link="tiktok" target="_blank" rel="noreferrer">TikTok</a>
+        <a data-config-link="discord" target="_blank" rel="noreferrer">Discord</a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Capital Network. All rights reserved.</span>
+        <span>Designed for the Capital Network community.</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Connect link copied</div>
+
+  <script src="config.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
